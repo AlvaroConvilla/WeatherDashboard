@@ -19,16 +19,16 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   themes = [
     {
+      value: 'cosmic',
+      name: 'Cosmic',
+    },
+    {
       value: 'default',
       name: 'Light',
     },
     {
       value: 'dark',
       name: 'Dark',
-    },
-    {
-      value: 'cosmic',
-      name: 'Cosmic',
     },
     {
       value: 'corporate',
@@ -69,6 +69,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
         takeUntil(this.destroy$),
       )
       .subscribe(themeName => this.currentTheme = themeName);
+
+      this.themeService.changeTheme('cosmic');
   }
 
   ngOnDestroy() {
