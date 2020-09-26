@@ -8,7 +8,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   }, */
   {
-    title: 'IoT Dashboard',
+    title: 'Estación Meteorológica Exterior',
     icon: 'home-outline',
     link: '/pages/iot-dashboard',
   }/* ,
