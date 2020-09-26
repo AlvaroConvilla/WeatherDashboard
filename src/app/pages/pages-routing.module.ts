@@ -1,7 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
+import { TabsComponent } from './layout/tabs/tabs.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
@@ -12,7 +13,7 @@ const routes: Routes = [{
   children: [
     {
       path: 'dashboard',
-      component: ECommerceComponent,
+      component: TabsComponent, //ECommerceComponent, 
     },
     {
       path: 'iot-dashboard',
